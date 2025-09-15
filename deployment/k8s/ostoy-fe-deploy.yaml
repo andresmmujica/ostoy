@@ -3,6 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: ostoy-pvc
 spec:
+  storageClassName: nfs-csi
   accessModes:
     - ReadWriteOnce
   resources:
